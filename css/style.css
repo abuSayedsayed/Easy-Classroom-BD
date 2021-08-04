@@ -1,0 +1,441 @@
+@font-face {
+	font-family: 'Arin-Ansi';
+	src: url('./fonts/Arin/Arin-ANSI.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Bensen';
+	src: url('./fonts/BenSen/BenSen.ttf') format('truetype');
+}
+
+:root {
+	--primary: #037b94;
+	--secondary: #ff8c0d;
+	--red: #ff2507;
+	--white: #fff;
+	--black: #333;
+}
+body {
+	font-family: 'Baloo Da 2', cursive !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Hind Siliguri', sans-serif !important;
+}
+section {
+	padding: 5rem 0rem;
+	margin: 5rem 0rem;
+}
+::selection {
+	background-color: var(--primary);
+	color: var(--white);
+}
+img {
+	width: 100%;
+	display: block;
+}
+#navbar {
+	background-color: var(--primary);
+	background-color: #037b94;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+}
+.navbar-brand > img {
+	width: 60%;
+}
+.navbar-toggler {
+	color: var(--white) !important;
+	color: #fff !important;
+}
+.navbar-toggler > span {
+	color: var(--white);
+	color: #fff !important;
+}
+.navbar-nav {
+	text-align: center;
+}
+.nav-link {
+	color: var(--white);
+	transition: all 0.5s;
+}
+.nav-link:hover {
+	color: var(--black);
+	color: #333;
+}
+.nav-link.active {
+	color: var(--black);
+	color: #333;
+}
+.carousel-item {
+	position: relative;
+	min-height: 60vh;
+}
+.carousel-item > .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(
+		100deg,
+		var(--primary, 70%),
+		80%,
+		transparent
+	);
+	z-index: 5;
+}
+.carousel-item > .container {
+	position: relative;
+	color: var(--white);
+}
+.carousel-text {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	z-index: 6;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10rem;
+}
+.carousel-title > span {
+	color: var(--secondary);
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+}
+.carousel-desc {
+	text-align: center;
+	font-family: 'Baloo Da 2', cursive !important;
+	font-weight: 500;
+}
+.carousel-item > img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: 4;
+}
+.watch-video-btn {
+	border: 0.1rem solid var(--secondary);
+	padding: 0.8rem 2rem;
+	background-color: transparent;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+	transition: all 0.3s ease-in-out 0.2s;
+}
+.watch-video-btn > a {
+	color: var(--secondary);
+	text-decoration: none;
+	transition: all 0.3s ease-in-out 0.2s;
+}
+.watch-video-btn > a > i {
+	color: var(--red);
+}
+.watch-video-btn:hover {
+	background-color: var(--secondary);
+}
+.watch-video-btn:hover.watch-video-btn > a {
+	color: var(--white);
+}
+.section-title {
+	font-weight: 800;
+	color: var(--primary);
+	position: relative;
+}
+.section-title::before {
+	content: '';
+	position: absolute;
+	bottom: 0%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	height: 0.1rem;
+	background-color: var(--secondary);
+}
+.watch-video-btn.watch-more {
+	background-color: var(--secondary);
+}
+.watch-video-btn.watch-more > a {
+	color: var(--white);
+}
+.watch-video-btn.watch-more:hover {
+	background-color: var(--red);
+	border-color: var(--red);
+}
+.watch-video-btn.watch-more:hover.watch-video-btn.watch-more > a {
+	color: var(--white);
+}
+.card {
+	transition: all 0.3s ease-in-out 0.2s;
+	cursor: pointer;
+}
+.card:hover {
+	transform: translateY(-1rem);
+}
+.card-title {
+	font-weight: 600;
+	color: var(--secondary);
+}
+.card-description {
+	color: var(--black);
+}
+.download-pdf-btn {
+	padding: 0.6rem 1.2rem;
+	border: none;
+	background-color: var(--red);
+	color: var(--white);
+	font-weight: bold;
+	transition: all 0.3s ease-in-out 0.2s;
+}
+.download-pdf-btn:hover {
+	background-color: var(--black);
+}
+.jumbotron {
+	background-color: var(--primary);
+}
+.ah-left {
+	border-right: 0.2rem solid var(--white);
+}
+.ah-name {
+	font-weight: 600;
+	color: var(--white);
+}
+.ah-name > small {
+	font-size: 60%;
+	font-weight: 400;
+	vertical-align: middle;
+}
+.designation {
+	color: #252525;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+}
+
+.institution,
+.institution > a {
+	font-size: 1rem;
+	color: var(--black);
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+}
+.img {
+	width: 50%;
+	text-align: center;
+	margin: 0 auto;
+}
+.social-link {
+	color: var(--white);
+	transition: all 0.3s ease-in-out 0.2s;
+}
+.social-link:hover {
+	color: var(--secondary);
+}
+.ah-description {
+	font-weight: 400;
+	color: #252525;
+}
+/* Review section starts here */
+.carousel-control-prev,
+.carousel-control-next {
+	color: var(--primary);
+	font-size: 1.5rem;
+	transition: all 0.3s;
+}
+.carousel-control-prev:hover {
+	color: var(--secondary);
+}
+.carousel-control-next:hover {
+	color: var(--secondary);
+}
+.single-review {
+	background-color: var(--primary);
+	width: 30%;
+	padding: 3rem 0rem;
+}
+.single-review > .icon {
+	font-size: 4rem;
+	color: var(--white);
+}
+.single-review > .reviewer-img {
+	width: 19%;
+	margin: auto;
+}
+.single-review > .review {
+	font-weight: 200;
+	color: #252525;
+}
+.single-review > .reviewer-name {
+	font-weight: 600;
+	text-align: center;
+	color: var(--white);
+}
+/* Review section ends here */
+/* Course section starts  */
+.more-courses {
+	font-size: 1rem;
+	color: #252525;
+	font-weight: 400;
+}
+.more-courses > a {
+	padding-left: 0.2rem;
+	color: var(--secondary);
+}
+.course-content {
+	font-size: 1rem;
+	font-weight: 600;
+	color: var(--primary);
+}
+.course-title {
+	color: var(--primary);
+	font-weight: 600;
+}
+.course-outline {
+	list-style: none;
+}
+.course-outline > li {
+	color: var(--black);
+	padding: 0.3rem 0rem;
+}
+.course-outline > li > i {
+	color: var(--secondary);
+	padding-right: 0.4rem;
+}
+.course-fee {
+	color: #252525;
+	font-weight: 500;
+}
+.course-fee > span {
+	color: var(--primary);
+}
+.form-group > label {
+	font-weight: 500;
+	color: var(--primary);
+	font-size: 1.2rem;
+}
+.submit-btn {
+	padding: 0.6rem 2rem;
+	background-color: var(--primary);
+	color: var(--white);
+	font-weight: bold;
+	border: none;
+	transition: all 0.5s;
+}
+.submit-btn:hover {
+	background-color: var(--black);
+	cursor: pointer;
+}
+.know-more-btn {
+	padding: 0.6rem 1.8rem;
+	border: none;
+	background-color: var(--primary);
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+	color: var(--white);
+	transition: all 0.3s ease-in-out 0.2s;
+}
+.know-more-btn:hover {
+	background-color: var(--black);
+}
+/* Course section ends  */
+/* contact starts */
+.contact-title {
+	font-weight: 600;
+	color: var(--primary);
+}
+.phone-numbers {
+	color: var(--black);
+}
+
+.phone-numbers > p > i,
+.phone-numbers > span > i,
+.email-address > p > i,
+.email-address > span > i {
+	color: var(--primary);
+	border-right: 0.1rem solid var(--secondary);
+}
+.address > p > i {
+	font-size: 1.5rem;
+	color: var(--primary);
+	border-right: 0.1rem solid var(--secondary);
+}
+.contact-links > span > a > i {
+	color: var(--secondary);
+	transition: all 0.3s;
+}
+.contact-links > span > a > i:hover {
+	color: var(--primary);
+}
+/* contact ends */
+/* Footer section starts  */
+#footer {
+	background-color: var(--primary);
+	padding-top: 5rem;
+}
+.footer-title {
+	color: var(--white);
+	border-bottom: 0.1rem solid var(--secondary);
+	padding-bottom: 0.2rem;
+}
+.footer-desc {
+	color: var(--white);
+}
+.footer-desc > a {
+	color: var(--secondary);
+}
+.footer-link {
+	list-style: none;
+}
+.footer-link > li > a {
+	color: var(--white);
+	transition: all 0.3s;
+}
+.footer-link > li > a:hover {
+	color: var(--secondary);
+}
+.videos-img > a > img {
+	width: 20%;
+}
+.videos-img>a{
+	color: var(--white);
+	transition: all .3s;
+}
+.videos-img>a:hover{
+	color: var(--secondary);
+}
+.dev-link > span > a > i {
+	color: var(--white);
+	transition: all 0.3s;
+}
+.dev-link > span > a > i:hover {
+	color: var(--secondary);
+}
+.footer-down{
+	background-color: var(--black);
+	padding: 1rem 0rem;
+	color: var(--white);
+	text-align: center;
+}
+.footer-down>.container>span>a{
+	color: var(--secondary);
+	transition: all .3s;
+}
+.footer-down>.container>span>a:hover{
+	color: var(--red);
+}
+/* Footer section ends  */
+
+#error{
+	width: 100vw;
+	height: 100vh;
+}
+#error>img{
+	width: 20%;
+	margin: auto;
+}

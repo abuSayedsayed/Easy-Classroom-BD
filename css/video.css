@@ -1,0 +1,47 @@
+/* ================================================== Video ================================================ */
+section {
+	padding: 3rem 0rem;
+}
+/* Introduction */
+#introduction-video > iframe {
+	width: 100vw;
+	height: 80vh;
+	padding-top: 4rem;
+}
+.watch-more-video {
+	padding: 0.8rem 3rem;
+	background-color: var(--secondary);
+	color: var(--white);
+	border: none;
+	font-weight: 500;
+	transition: all 0.3s ease-in-out 0.2s;
+}
+.watch-more-video:hover {
+	background-color: var(--primary);
+}
+.promote-text {
+	font-weight: 200;
+	color: var(--black);
+	color: #252525;
+	font-family: 'Poppins' , sans-serif;
+}
+.promote-text > i {
+	color: var(--red);
+	transition: all 0.5s ease-in-out 0.1s;
+}
+.promote-text > i:hover {
+	color: var(--black);
+}
+.card-title {
+	color: var(--primary);
+}
+.card-btn {
+	background-color: var(--red);
+}
+.card-btn:hover {
+	background-color: var(--black);
+}
+.video-title{
+	font-weight: 500;
+	color: var(--black);
+}

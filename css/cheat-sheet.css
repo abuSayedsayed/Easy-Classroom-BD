@@ -1,0 +1,19 @@
+#introduction{
+    background-image: url(../image/cheatsheet_01.jpg) , linear-gradient(rgba(0, 0, 0, 0.714),rgba(0, 0, 0, 0.714));
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 60vh;
+    display: grid;
+    place-items: center;
+}
+.intro-title{
+    color: var(--secondary);
+    font-weight: 600;
+    text-shadow: .1rem .1rem .3rem var(--black);
+}
+.b-d{
+    font-weight: 700;
+}
