@@ -1,0 +1,43 @@
+@media screen and (max-width: 1440px) {
+	.carousel-control-prev,
+	.carousel-control-next {
+		color: var(--white);
+		font-size: 1.5rem;
+		transition: all 0.3s;
+	}
+}
+@media screen and (max-width: 1024px) {
+	.single-review {
+		width: 48%;
+	}
+
+	.single-review:nth-child(even) {
+		display: none;
+	}
+}
+@media screen and (max-width: 768px) {
+	.single-review {
+		width: 48%;
+	}
+
+	.single-review:nth-child(even) {
+		display: none;
+	}
+	.carousel-item {
+		min-height: 80vh;
+	}
+	.ah-left{
+		border: none;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.single-review {
+		width: 90%;
+		margin: auto;
+	}
+	.carousel-item {
+		min-height: 100vh;
+	}
+	
+}
