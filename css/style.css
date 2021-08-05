@@ -9,6 +9,7 @@
 }
 body {
 	font-family: 'Baloo Da 2', cursive !important;
+	overflow:hidden !important;
 }
 h1,
 h2,
