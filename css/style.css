@@ -1,5 +1,5 @@
 /* =====================================  WELCOME TO STYLE.CSS FILE ================================================ */
-*{
+* {
 	margin: 0;
 	padding: 0;
 }
@@ -12,7 +12,7 @@
 }
 body {
 	font-family: 'Baloo Da 2', cursive !important;
-	overflow-x:hidden !important;
+	overflow-x: hidden !important;
 }
 h1,
 h2,
@@ -26,15 +26,17 @@ section {
 	padding: 5rem 0rem;
 	margin: 5rem 0rem;
 }
+iframe {
+	width: 100%;
+}
 ::selection {
 	background-color: var(--primary);
 	color: var(--white);
 }
 
-iframe{
+iframe {
 	width: 100%;
 }
-
 
 img {
 	width: 100%;
@@ -393,11 +395,11 @@ img {
 .videos-img > a > img {
 	width: 20%;
 }
-.videos-img>a{
+.videos-img > a {
 	color: var(--white);
-	transition: all .3s;
+	transition: all 0.3s;
 }
-.videos-img>a:hover{
+.videos-img > a:hover {
 	color: var(--secondary);
 }
 .dev-link > span > a > i {
@@ -407,29 +409,29 @@ img {
 .dev-link > span > a > i:hover {
 	color: var(--secondary);
 }
-.footer-down{
+.footer-down {
 	background-color: var(--black);
 	padding: 1rem 0rem;
 	color: var(--white);
 	text-align: center;
 }
-.footer-down>.container>span>a{
+.footer-down > .container > span > a {
 	color: var(--secondary);
-	transition: all .3s;
+	transition: all 0.3s;
 }
-.footer-down>.container>span>a:hover{
+.footer-down > .container > span > a:hover {
 	color: var(--red);
 }
 /* Footer section ends  */
 
-#error{
+#error {
 	width: 100vw;
 	height: 100vh;
 }
-#error>img{
+#error > img {
 	width: 20%;
 	margin: auto;
 }
-.download-link{
+.download-link {
 	text-decoration: none;
 }
