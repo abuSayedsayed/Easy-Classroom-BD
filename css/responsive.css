@@ -7,22 +7,16 @@
 	}
 }
 @media screen and (max-width: 1024px) {
-	.single-review {
-		width: 48%;
-	}
+	
 
 	.single-review:nth-child(even) {
 		display: none;
 	}
 }
 @media screen and (max-width: 768px) {
-	.single-review {
-		width: 48%;
-	}
+	
 
-	.single-review:nth-child(even) {
-		display: none;
-	}
+	
 	.carousel-item {
 		min-height: 80vh;
 	}
@@ -32,10 +26,7 @@
 }
 
 @media screen and (max-width: 425px) {
-	.single-review {
-		width: 90%;
-		margin: auto;
-	}
+	
 	.carousel-item {
 		min-height: 100vh;
 	}

@@ -1,5 +1,8 @@
 /* =====================================  WELCOME TO STYLE.CSS FILE ================================================ */
-
+*{
+	margin: 0;
+	padding: 0;
+}
 :root {
 	--primary: #037b94;
 	--secondary: #ff8c0d;
@@ -9,7 +12,7 @@
 }
 body {
 	font-family: 'Baloo Da 2', cursive !important;
-	overflow:hidden !important;
+	overflow-x:hidden !important;
 }
 h1,
 h2,
@@ -27,6 +30,12 @@ section {
 	background-color: var(--primary);
 	color: var(--white);
 }
+
+iframe{
+	width: 100%;
+}
+
+
 img {
 	width: 100%;
 	display: block;
@@ -236,21 +245,9 @@ img {
 	color: #252525;
 }
 /* Review section starts here */
-.carousel-control-prev,
-.carousel-control-next {
-	color: var(--primary);
-	font-size: 1.5rem;
-	transition: all 0.3s;
-}
-.carousel-control-prev:hover {
-	color: var(--secondary);
-}
-.carousel-control-next:hover {
-	color: var(--secondary);
-}
+
 .single-review {
 	background-color: var(--primary);
-	width: 30%;
 	padding: 3rem 0rem;
 }
 .single-review > .icon {
